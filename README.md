@@ -23,6 +23,10 @@ If you prebundle your Workflow Code then this would reduce Worker startup time.
 - [healthService.check](https://github.com/temporalio/sdk-typescript/blob/main/packages/test/src/test-client-connection.ts#L224C32-L224C50)
   - [withOptionalStatusServer](https://github.com/temporalio/sdk-typescript/blob/42b16641ef2ad4afd81afd45de15cb9a2c10aff2/packages/test/src/load/worker.ts#L173)
 
+### VSCode
+
+- [Debugger](https://marketplace.visualstudio.com/items?itemName=temporal-technologies.temporalio)
+
 ## Optional
 
 ## Custom Logger
