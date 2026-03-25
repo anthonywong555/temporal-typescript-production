@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "nodemon -r ./src/instrumentation.ts src/worker.ts",
-    "build": "tsc --build",
+    "build": "tsc --build && pnpm run build:workflow",
     "build.watch": "tsc --build --watch",
     "build:workflow": "ts-node src/scripts/build-workflow-bundle.ts",
     "format": "prettier --write .",
