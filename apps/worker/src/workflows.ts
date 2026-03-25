@@ -1,4 +1,4 @@
-import { proxyActivities } from '@temporalio/workflow';
+import { proxyActivities, log } from '@temporalio/workflow';
 import type * as activities from './activities';
 
 const { greet } = proxyActivities<typeof activities>({
@@ -6,5 +6,7 @@ const { greet } = proxyActivities<typeof activities>({
 });
 
 export async function example(name: string): Promise<string> {
+  log.error('Log:Error');
+  console.error('Console Log:Error');
   return await greet(name);
 }

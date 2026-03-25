@@ -1,1 +1,1 @@
-{"root":["./src/activities.ts","./src/client.ts","./src/worker.ts","./src/workflows.ts","./src/scripts/build-workflow-bundle.ts"],"version":"5.9.3"}
+{"root":["./src/activities.ts","./src/client.ts","./src/instrumentation.ts","./src/worker.ts","./src/workflows.ts","./src/scripts/build-workflow-bundle.ts"],"version":"5.9.3"}

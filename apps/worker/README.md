@@ -24,4 +24,4 @@ Hello, Temporal!
 
 1. `npm run build` to build the Worker script and Activities code.
 1. `npm run build:workflow` to build the Workflow code bundle.
-1. `NODE_ENV=production node lib/worker.js` to run the production Worker.
+1. `NODE_ENV=production node -r ./lib/instrumentation.js ./lib/worker.js` to run the production Worker.
