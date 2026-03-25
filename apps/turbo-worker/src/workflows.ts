@@ -1,5 +1,5 @@
 import { proxyActivities } from '@temporalio/workflow';
-import type * as activities from '@boilerplate/activities';
+import type * as activities from '@boilerplate/activities/example';
 
 const { greet } = proxyActivities<typeof activities>({
   startToCloseTimeout: '1 minute',

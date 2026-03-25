@@ -1,5 +1,5 @@
 import { Worker } from '@temporalio/worker';
-import * as activities from '@boilerplate/activities';
+import * as activities from '@boilerplate/activities/example';
 
 // @@@SNIPSTART typescript-production-worker
 const workflowOption = () =>

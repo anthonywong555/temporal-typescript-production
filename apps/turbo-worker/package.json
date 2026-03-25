@@ -19,10 +19,14 @@
     "execMap": {
       "ts": "ts-node"
     },
-    "ext": "ts",
+    "ext": "ts,cjs,mjs,js",
     "watch": [
-      "src"
-    ]
+      "src",
+      "node_modules/@boilerplate/activities/dist",
+      "node_modules/@boilerplate/workflows/dist",
+      "node_modules/@boilerplate/common/dist"
+    ],
+    "ignoreRoot": []
   },
   "dependencies": {
     "@boilerplate/activities": "workspace:*",
