@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "nodemon -r ./src/instrumentation.ts src/worker.ts",
-    "build": "tsc --build && pnpm run build:workflow",
+    "dev": "nodemon src/worker.ts",
+    "build": "tsc --build",
     "build.watch": "tsc --build --watch",
     "build:workflow": "ts-node scripts/build-workflow-bundle.ts",
     "format": "prettier --write .",
@@ -17,7 +17,7 @@
   },
   "nodemonConfig": {
     "execMap": {
-      "ts": "node --env-file=.env -r ts-node/register"
+      "ts": "ts-node"
     },
     "ext": "ts",
     "watch": [
