@@ -1,0 +1,23 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+
+catalog:
+  "typescript": "^5.9.3"
+  "eslint": "^8.57.1"
+  "eslint-config-prettier": "^9.1.0"
+  "eslint-plugin-deprecation": "^3.0.0"
+  "nodemon": "^3.1.7"
+  "prettier": "^3.4.2"
+  "ts-node": "^10.9.2"
+  "@temporalio/common": "^1.15.0"
+  "@temporalio/client": "^1.15.0"
+  "@temporalio/worker": "^1.15.0"
+  "@temporalio/activity": "^1.15.0"
+  "@temporalio/envconfig": "^1.15.0"
+  "@temporalio/interceptors-opentelemetry": "^1.15.0"
+  "@temporalio/workflow": "^1.15.0"
+  "@temporalio/ai-sdk": "^1.15.0"
+  "@temporalio/nexus": "^1.15.0"
+  "@temporalio/proto": "^1.15.0"
+  "@temporalio/nyc-test-coverage": "^1.15.0"
