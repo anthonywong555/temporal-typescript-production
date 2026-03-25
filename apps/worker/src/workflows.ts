@@ -8,5 +8,9 @@ const { greet } = proxyActivities<typeof activities>({
 export async function example(name: string): Promise<string> {
   log.error('Log:Error');
   console.error('Console Log:Error');
-  return await greet(name);
+  const result = await greet(name);
+
+  log.info(`Log.info: ${result}`);
+  console.info(`Console.info: ${result}`);
+  return result;
 }
