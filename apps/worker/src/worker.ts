@@ -5,7 +5,7 @@ import { setupOtelSdk, resource, spanProcessor } from './instrumentation';
 import { createLogger } from './logging';
 
 const winstonLogger = createLogger({
-  isProduction: process.env.NODE_ENV === 'production',
+  isProduction: process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'preview',
   logFilePath: process.env.WORKER_LOG_PATH || '/var/log/worker.log',
 });
 

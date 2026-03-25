@@ -32,11 +32,13 @@ const devLogFormat = winston.format.printf(({ level, message, label, timestamp, 
 /** Create a winston logger from given options */
 export function createLogger({ isProduction, logFilePath }: LoggerOptions): winston.Logger {
   const LOG_LEVEL = process.env.LOG_LEVEL || 'warn';
+  const transports = [
+    new winston.transports.Console(),
+    ...(isProduction ? [new winston.transports.File({ filename: logFilePath })] : []),
+  ];
   return winston.createLogger({
+    transports,
     level: LOG_LEVEL.toLowerCase(),
-    format: isProduction ? winston.format.json() : winston.format.combine(winston.format.colorize(), devLogFormat),
-    transports: [
-      isProduction ? new winston.transports.File({ filename: logFilePath }) : new winston.transports.Console(),
-    ],
+    format: isProduction ? winston.format.json() : winston.format.combine(winston.format.colorize(), devLogFormat)
   });
 }
