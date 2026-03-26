@@ -31,6 +31,7 @@
   "dependencies": {
     "@boilerplate/activities": "workspace:*",
     "@boilerplate/common": "workspace:*",
+    "@boilerplate/workflows": "workspace:*",
     "@temporalio/activity": "catalog:",
     "@temporalio/client": "catalog:",
     "@temporalio/envconfig": "catalog:",

@@ -1,6 +1,6 @@
 import { Connection, Client } from '@temporalio/client';
 import { loadClientConnectConfig } from '@temporalio/envconfig';
-import { example } from './workflows';
+import { example } from '@boilerplate/workflows';
 
 async function run() {
   const config = loadClientConnectConfig();
