@@ -32,5 +32,5 @@ LOG_LEVEL=DEBUG | INFO | WARN | ERROR
 WORKER_LOG_PATH=worker.log
 
 ```sh
-NODE_ENV=production LOG_LEVEL=INFO WORKER_LOG_PATH=/lib/worker.log node -r ./lib/instrumentation.js ./lib/worker.js
+NODE_ENV=production LOG_LEVEL=INFO WORKER_LOG_PATH=./lib/worker.log node -r ./lib/instrumentation.js ./lib/worker.js
 ```
